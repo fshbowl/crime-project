@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h4>Holly's CrimeWatch</h4>
+    </div>
+
+    <div id="map-box">
+        <div id="map"></div>
+    </div>
+
+    <div id="background">
+    <div id="form">
+        <div class="d-flex align-items-center mb-3">
+            <label for="latitude" class="form-label">Latitude: </label>
+            <input id="latitude" class="form-control">
+        </div>
+        <div class="d-flex align-items-center mb-3">
+            <label for="longitude" class="form-label">Longitude: </label>
+            <input id="longitude" class="form-control">
+        </div>
+        <div class="d-flex align-items-center mb-3">
+            <label for="date" class="form-label">Date (specific month):</label>
+            <input id="date" type="month" class="form-control">
+        </div>
+        <button onclick="getCrimes()">Search For Crimes</button>
+    </div>
+
+    <div class="d-flex align-items-center mb-3">
+        <label for="crimeType" class="form-label">Crime Type:</label>
+        <select id="crimeType" class="form-select">
+            <option value="">All</option>
+        </select>
+    </div>
+
+    <div  is="resultsBackground">
+    <div id="results" class="slide-in">
+        <h2>All Crimes In This Area:</h2>
+    </div>
+    </div>
+    </div>
+
+<div id="hidden-message">
+    <hr> <!-- subtle line -->
+    <details>
+        <p>
+            To Holly, I hope this page keeps you safe in the world of Woodhatch or wherever you may be o7.
+            I love you so much, the real crime is that you aren't cuddling me 24/7. Sincerely yours, Harry
+        </p>
+        <img src="code2.png" style="width:10%;">
+        <p style="text-align: center;">(Use headphones for greatest experience)</p>
+    </details>
+</div>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+
+
+
+
